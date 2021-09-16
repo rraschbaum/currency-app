@@ -3,6 +3,7 @@ import React from "react";
 import styled from 'styled-components';
 
 const TableRowStyled = styled.tr`
+color: ${props => props.theme.colors.darkPrimary};  
   border-bottom: 1px ${props => props.theme.colors.secondaryMed} solid;
 
   td {

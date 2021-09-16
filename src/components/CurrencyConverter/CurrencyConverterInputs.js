@@ -85,7 +85,7 @@ const CurrencyConverterInputs = (props) => {
       />
       <CurrencySelect
         currencies={props.currencies}
-        label="from"
+        label="From"
         value={props.base}
         onChangeData={handleBaseChangeData}
       />
@@ -99,7 +99,7 @@ const CurrencyConverterInputs = (props) => {
       </div>
       <CurrencySelect
         currencies={props.currencies} 
-        label="to"
+        label="To"
         value={props.compare}
         onChangeData={handleCompareChangeData}
       />

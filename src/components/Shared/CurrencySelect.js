@@ -7,6 +7,7 @@ const SelectStyled = styled.div`
   width: 100%;
 
   label {
+      color: ${props => props.theme.colors.darkPrimary};
       font-weight: 600;
       display: block;
       margin-bottom: ${props => props.theme.spacing.xxsm};

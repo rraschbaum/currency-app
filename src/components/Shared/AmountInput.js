@@ -44,6 +44,7 @@ class AmountInput extends Component {
           min="1"
           onChange={this.handleAmountChange}
           value={this.props.amount}
+          className={this.props.className}
         />
       </InputStyled>
     )

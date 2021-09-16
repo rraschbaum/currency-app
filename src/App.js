@@ -13,8 +13,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      base: '',
-      compare: '',
+      base: 'USD',
+      compare: 'EUR',
       amount: '',
       rate: '',
       reverseRate: '',

@@ -4,9 +4,14 @@ import AmountInput from '../Shared/AmountInput';
 import CurrencySelect from '../Shared/CurrencySelect';
 
 const Container = styled.div`
+  
   @media ${props => props.theme.mediaQueries.above700} {
     width: 100%;
   }
+`;
+
+const AmountInputMarginBottom = styled(AmountInput)`
+  margin-bottom: ${props => props.theme.spacing.xsm};
 `;
 
 const ExchangeRateInputs = (props) => {
@@ -22,11 +27,11 @@ const ExchangeRateInputs = (props) => {
 
   return(
     <Container> 
-      <AmountInput 
+      <AmountInputMarginBottom
         label="Amount"
         onAmountChange={handleAmountChangeData}
         amount={props.amount}
-      /> <br />
+      />
       <CurrencySelect
         label="From"
         value={props.base}
