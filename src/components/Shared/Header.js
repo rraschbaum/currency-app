@@ -25,6 +25,10 @@ const HeaderStyled = styled.header`
     color: ${props => props.theme.colors.white};
   }
 
+  .logo a {
+      color: white;
+    }
+
   ul {
     font-weight: 600;
     display: flex;
@@ -70,10 +74,6 @@ const HeaderStyled = styled.header`
 
     .logo {
       margin-bottom: 0;
-    }
-
-    .logo a {
-      color: white;
     }
 
     li {
